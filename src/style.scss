@@ -21,4 +21,58 @@ body {
   min-height: 100dvh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #4828dd;
+  padding: 50px 20px;
+}
+
+.card {
+  max-width: 914px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+
+  &__left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    height: 608px;
+    max-width: 422px;
+    width: 100%;
+    background-color: #d36e95;
+    padding: 20px 20px 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 18px 0 rgba(#000, 0.4);
+  }
+
+  &__shoes {
+    position: absolute;
+  }
+
+  &__logo {
+    max-width: 40px;
+  }
+
+  &__size {
+    font-weight: 700;
+    font-size: 270px;
+    text-align: center;
+    color: #dc8fae;
+    letter-spacing: 0.04em;
+    line-height: 0.8;
+  }
+
+  &__dots {
+    margin-top: auto;
+  }
+
+  &__right {
+    height: 540px;
+    background-color: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 100%;
+    box-shadow: 0 0 18px 0 rgba(#000, 0.4);
+  }
 }
