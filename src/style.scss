@@ -26,6 +26,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (width <= 768px) {
+    padding: 30px;
+  }
 }
 
 .card {
@@ -34,25 +38,42 @@ body {
   display: flex;
   align-items: center;
 
+  @media (width <= 768px) {
+    flex-direction: column;
+  }
+
   &__left {
     position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    height: 608px;
+    min-height: 608px;
     max-width: 422px;
     width: 100%;
     background-color: #d36e95;
     padding: 20px 20px 30px;
     border-radius: 6px;
     box-shadow: 0 0 18px 0 rgba(#000, 0.4);
+
+    @media (width <= 768px) {
+      min-height: 304px;
+      row-gap: 10px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
   }
 
   &__shoes {
     position: absolute;
-    left: -100px;
+    left: -65px;
     bottom: 16px;
     max-width: 460px;
+
+    @media (width <= 768px) {
+      max-width: 300px;
+      bottom: 0;
+      left: -70px;
+    }
 
     img {
       display: block;
@@ -103,16 +124,31 @@ body {
     &--heel {
       top: 60px;
       left: 120px;
+
+      @media (width <= 768px) {
+        top: 40px;
+        left: 80px;
+      }
     }
 
     &--sole {
-      top: 215px;
+      top: 210px;
       left: 200px;
+
+      @media (width <= 768px) {
+        top: 130px;
+        left: 125px;
+      }
     }
 
     &--material {
       top: 250px;
-      left: 360px;
+      left: 340px;
+
+      @media (width <= 768px) {
+        top: 164px;
+        left: 230px;
+      }
     }
   }
 
@@ -127,6 +163,14 @@ body {
     color: #dc8fae;
     letter-spacing: 0.04em;
     line-height: 0.8;
+
+    @media (width <= 1024px) {
+      font-size: 175px;
+    }
+
+    @media (width <= 768px) {
+      font-size: 120px;
+    }
   }
 
   &__dots {
@@ -141,6 +185,7 @@ body {
 
   &__dot {
     border: none;
+    padding: 0;
     width: 14px;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -158,17 +203,35 @@ body {
     &--active {
       background-color: #fff;
     }
+
+    @media (width <= 768px) {
+      width: 10px;
+    }
   }
 
   &__right {
     max-width: 492px;
-    height: 540px;
+    min-height: 540px;
     width: 100%;
     background-color: #fff;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     box-shadow: 0 0 18px 0 rgba(#000, 0.4);
     padding: 50px 40px;
+
+    @media (width <= 1024px) {
+      padding: 25px 20px;
+    }
+
+    @media (width <= 768px) {
+      border-radius: 6px;
+      min-height: auto;
+    }
+
+    @media (width <= 490px) {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
   }
 
   &__content {
@@ -199,6 +262,10 @@ body {
   &__text {
     letter-spacing: 0.02em;
     padding-bottom: 30px;
+
+    @media (width <= 768px) {
+      padding-bottom: 10px;
+    }
   }
 
   &__options {
@@ -206,6 +273,10 @@ body {
     align-items: center;
     column-gap: 45px;
     user-select: none;
+
+    @media (width <= 768px) {
+      column-gap: 20px;
+    }
   }
 
   &__options-title {
@@ -304,7 +375,7 @@ body {
     color: #fff;
     font-weight: 700;
     margin-top: 30px;
-    padding: 20px;
+    padding: 20px 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -322,6 +393,10 @@ body {
       &:hover {
         translate: 0 -3px;
       }
+    }
+
+    @media (width <= 768px) {
+      min-width: auto;
     }
   }
 }
