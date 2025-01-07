@@ -13,17 +13,100 @@
     <div class="card">
       <div class="card__left">
         <div class="card__shoes">
+          <button
+            class="card__shoes-btn card__shoes-btn--heel"
+            type="button"
+          ></button>
+          <button
+            class="card__shoes-btn card__shoes-btn--sole"
+            type="button"
+          ></button>
+          <button
+            class="card__shoes-btn card__shoes-btn--material"
+            type="button"
+          ></button>
           <img src="./src/img/shoes.png" alt="shoes" />
         </div>
         <img class="card__logo" src="./src/img/logo.png" alt="logo" />
-        <p class="card__size">39</p>
+        <h3 class="card__back-title">39</h3>
         <div class="card__dots">
           <button class="card__dot" type="button"></button>
-          <button class="card__dot" type="button"></button>
+          <button class="card__dot card__dot--active" type="button"></button>
           <button class="card__dot" type="button"></button>
         </div>
       </div>
-      <div class="card__right"></div>
+      <div class="card__right">
+        <div class="card__content">
+          <h2 class="card__title">Nike Flyknit</h2>
+          <p class="card__price">
+            $189.00
+            <span>$259.00</span>
+          </p>
+          <p class="card__text">
+            With a flexible Flyknit upper placed directly on top of a radically
+            reinvented Air cushioning system, The Nike Air VaporMax defies
+            conventional style and provides an unbelievably light, bouncy and
+            flexible feel.
+          </p>
+          <div class="card__options">
+            <p class="card__options-title">Size</p>
+            <div class="card__sizes">
+              <button class="card__size-btn" type="button">S</button>
+              <button
+                class="card__size-btn card__size-btn--active"
+                type="button"
+              >
+                M
+              </button>
+              <button class="card__size-btn" type="button">L</button>
+              <button class="card__size-btn" type="button">XL</button>
+              <button class="card__size-btn" type="button">XXL</button>
+            </div>
+          </div>
+          <div class="card__options">
+            <p class="card__options-title">Amount</p>
+            <div class="card__counter">
+              <button
+                class="card__counter-btn card__counter-btn--left"
+                type="button"
+              >
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="-3 0 28 28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.415 12.554 2.418.311C1.291-.296 0-.233 0 1.946v24.108c0 1.992 1.385 2.306 2.418 1.635l18.997-12.243a2.076 2.076 0 0 0 0-2.892"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <h6 class="card__value"></h6>
+              <button
+                class="card__counter-btn card__counter-btn--right"
+                type="button"
+              >
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="-3 0 28 28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.415 12.554 2.418.311C1.291-.296 0-.233 0 1.946v24.108c0 1.992 1.385 2.306 2.418 1.635l18.997-12.243a2.076 2.076 0 0 0 0-2.892"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="card__btn" type="button">buy now</button>
+        </div>
+      </div>
     </div>
+    <script src="./src/script.js" type="module"></script>
   </body>
 </html>
